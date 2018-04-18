@@ -17,6 +17,11 @@
   <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
 
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="vendor/jquery/slick.min.css"/>
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="vendor/jquery/slick-theme.min.css"/>
+
   <!-- Custom styles for this template -->
   <link href="css/grayscale.css" rel="stylesheet">
 </head>
@@ -92,7 +97,38 @@
       <div class="container">
         <div class="col-lg-8 mx-auto">
           <h2>웨딩사진</h2>
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="photo-slick">
+            <div><img class="d-block w-100" src="image/01first.jpg"></div>
+            <div><img class="d-block w-100" src="image/02.jpg"></div>
+            <div><img class="d-block w-100" src="image/03.jpg"></div>
+            <div><img class="d-block w-100" src="image/04.jpg"></div>
+            <div><img class="d-block w-100" src="image/05.jpg"></div>
+            <div><img class="d-block w-100" src="image/06.jpg"></div>
+            <div><img class="d-block w-100" src="image/07.jpg"></div>
+            <div><img class="d-block w-100" src="image/08.jpg"></div>
+            <div><img class="d-block w-100" src="image/09.jpg"></div>
+            <!-- <div><img class="d-block w-100" src="image/10.jpg"></div> -->
+            <!-- <div><img class="d-block w-100" src="image/11.jpg"></div> -->
+            <!-- <div><img class="d-block w-100" src="image/12-13.jpg"></div> -->
+            <!-- <div><img class="d-block w-100" src="image/14.jpg"></div>
+            <div><img class="d-block w-100" src="image/15.jpg"></div>
+            <div><img class="d-block w-100" src="image/16.jpg"></div> -->
+            <div><img class="d-block w-100" src="image/17.jpg"></div>
+            <div><img class="d-block w-100" src="image/18.jpg"></div>
+            <div><img class="d-block w-100" src="image/19.jpg"></div>
+            <div><img class="d-block w-100" src="image/20.jpg"></div>
+            <div><img class="d-block w-100" src="image/21.jpg"></div>
+            <div><img class="d-block w-100" src="image/22.jpg"></div>
+            <div><img class="d-block w-100" src="image/23.jpg"></div>
+            <div><img class="d-block w-100" src="image/24.jpg"></div>
+            <div><img class="d-block w-100" src="image/25.jpg"></div>
+            <div><img class="d-block w-100" src="image/26.jpg"></div>
+            <div><img class="d-block w-100" src="image/27.jpg"></div>
+            <div><img class="d-block w-100" src="image/28.jpg"></div>
+            <div><img class="d-block w-100" src="image/29.jpg"></div>
+            <div><img class="d-block w-100" src="image/30end.jpg"></div>
+          </div>
+          <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img class="d-block w-100" src="image/01first.jpg" alt="First slide">
@@ -112,7 +148,7 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -150,7 +186,19 @@
     <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=mOKh44BMVSBScuX79vU5&submodules=geocoder"></script>
     <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 
+    <script type="text/javascript" src="vendor/jquery/slick.min.js"></script>
+
     <!-- Custom scripts for this template -->
-    <script src="js/grayscale.js"></script>
+    <script src="js/grayscale.js"></script>\
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.photo-slick').slick({
+        autoplay: false,
+        dots: false,
+        infinite: true
+      });
+    });
+    </script>
   </body>
   </html>
