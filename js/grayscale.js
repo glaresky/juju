@@ -29,6 +29,9 @@
   $('#kakao-navi').click(function() {
     navi();
   });
+  $('#tmap-navi').click(function() {
+    tmap_navi();
+  });
 
   // Collapse Navbar
   var navbarCollapse = function() {
@@ -91,12 +94,29 @@ naver.maps.Service.geocode({address: myaddress}, function(status, response) {
 Kakao.init('20ab922a498f1485fcd5d70954b6a5c9');
 
 function navi() {
-  console.log('navi')
   Kakao.Navi.start({
     name: "그랜드컨벤션웨딩",
     x: 128.623455,
     y: 36.819962,
     coordType: 'wgs84'
+  });
+}
+
+var tmap_map;
+tmap_init();
+function tmap_init() {
+  tmap_map = new Tmap.Map({div:'map_div',
+    width:'1px',
+    height:"1px"
+  });
+}
+function tmap_navi() {
+  console.log(tmap_map.tmapAppInvoke);
+  tmap_map.tmapAppInvoke({
+    client:"sk",
+    title:"그랜드컨벤션웨딩",
+    lonlat:new Tmap.LonLat(128.623455, 36.819962),
+    alert:true
   });
 }
 
