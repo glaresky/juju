@@ -115,7 +115,7 @@ function tmap_navi() {
   tmap_map.tmapAppInvoke({
     client:"sk",
     title:"그랜드컨벤션웨딩",
-    lonlat:new Tmap.LonLat(128.623455, 36.819962),
+    lonlat:new Tmap.LonLat(128.623455, 36.819962).transform("EPSG:4326", "EPSG:3857"),
     alert:true
   });
 }
