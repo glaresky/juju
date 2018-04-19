@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+#type01 {padding:0 2.0rem;width:100%;box-sizing:border-box;}
+#type01:before {content:"";display:block;position:absolute;top:0;left:0;width:2rem;height:100%;background:#fff;z-index:1;}
+#type01:after {content:"";display:block;position:absolute;top:0;right:0;width:2rem;height:100%;background:#fff;}
+#type01 .roll_type01 li img {width:100%;}
+#type01 .lSSlideOuter .lSPager.lSGallery, .lSSlideOuter .lSPager.lSGallery img {height:6rem;min-height:6rem;}
+#type01 .lSSlideOuter .lSPager.lSGallery li {position:relative;}
+#type01 .lSSlideOuter .lSPager.lSGallery li:after {content:"";position:absolute;top:0;left:0;display:block;width:100%;height:100%;background:#000;opacity:0.4;}
+#type01 .lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover {border-radius:0 !important;}
+#type01 .lSSlideOuter .lSPager.lSGallery li.active:after {display:none;}
+
+.lSAction > a {width:1.5rem !important;padding-top:1.6rem;height:0 !important;overflow:hidden;}
+.lSAction > .lSPrev {left:-1.7rem !important;background:url(../img/index_new01/prev.png) 0 0 no-repeat !important;background-size:100% !important;}
+.lSAction > .lSNext {right:-1.7rem !important;background:url(../img/index_new01/next.png) 0 0 no-repeat !important;background-size:100% !important;}
+
+#type03 {position:relative;}
+#type03 ul {/*padding:14.6rem 2.8rem 0;*/margin:0 auto;}
+#type03 ul li {position:relative;margin-bottom:0.2rem;width:100%;height:13.1rem;overflow:hidden;}
+#type03 ul li .img {position:absolute;top:0;left:0;width:100%;height:100%;}
+#type03 ul li .img img {width:100%;position:absolute;top:50%;left:50%;transform: translate(-50%, -30%);}
+#type03 p {margin:0 auto;padding:0.4rem 2.8rem 2.7rem;}
+#type03 p img {width:100%;}
+
+#pop {position:fixed;top:0;left:0;width:100%;height:100%;z-index:9999;}
+#pop:before {content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;background:#000;opacity:0.6;}
+#pop .img {position:absolute;top:50%;left:50%;width:100%;padding:0 2.3rem;display:block;transform: translate(-50%, -50%);box-sizing:border-box;}
+#pop .img img {width:100%}
+#pop .img .close {position:absolute;top:0;right:2.3rem;width:2.8rem;height:0;padding-top:2.8rem;overflow:hidden;background:url(../img/index_new01/pop_close.jpg) 0 0 no-repeat;background-size:100%;}
+
+@media all and (max-width:320px) {
+.roll_type02 .item .box {height:8rem !important;}
+#type03 ul li {height:10rem !important;}
+}
