@@ -42,7 +42,11 @@ li {list-style:none;}
 .section2 .icon ul {display:inline-block;width:83%;margin:0 auto;}
 .section2 .icon ul li {float:left;width:20%;padding:0 1.0rem;box-sizing:border-box;}
 .section2 .icon ul li a {display:block;}
-.section2 .greeting {width:83%;margin:0 auto;padding:2.7rem 0 1.5rem;text-align:center;font-size:1.4rem;line-height:2.4rem;color:#616161;white-space:pre-wrap;}
+.section2 .greeting {width:90%;margin:0 auto;padding:2.7rem 0 1.5rem;text-align:center;font-size:1.4rem;line-height:2.4rem;color:#616161;white-space:pre-wrap;}
+.section2 p.comment {
+  padding: 0 0 1.5rem;
+}
+/* .section2 .greeting {width:83%;margin:0 auto;padding:2.7rem 0 1.5rem;text-align:center;font-size:1.4rem;line-height:2.4rem;color:#616161;white-space:pre-wrap;} */
 .section2 .parent {width:60%;margin:0 auto;padding:1.5rem 0 3rem;text-align:center;color:#8fb1c9;font-size:1.2rem;}
 .section2 .parent span {color:#616161;font-size:1.4rem;}
 
