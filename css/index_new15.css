@@ -118,3 +118,5 @@ li {list-style:none;}
   padding-right: 0px;
   padding-left: 0px;
 } */
+a-slide{ height: 100%; width: 100%; background-size: cover !important;}
+.slick-slider{ height: 100%;}
